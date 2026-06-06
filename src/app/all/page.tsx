@@ -63,19 +63,19 @@ export default function AllPage() {
                   <span className="text-sm font-semibold text-slate-600">{section.label}</span>
                   <span className="text-xs text-slate-400">{tasks.length}</span>
                 </div>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-4">
                   {section.project && (
                     <>
                       <button
                         onClick={() => setEditingProject(section.project!)}
-                        className="text-slate-400 text-sm"
+                        className="text-slate-400 text-base"
                         title="編集"
                       >
                         ✎
                       </button>
                       <button
                         onClick={() => handleDeleteProject(section.project!)}
-                        className="text-slate-400 text-sm"
+                        className="text-slate-400 text-base"
                         title="削除"
                       >
                         ✕
@@ -84,7 +84,7 @@ export default function AllPage() {
                   )}
                   <button
                     onClick={() => setAddingForProject(section.id ?? 'no-project')}
-                    className="text-slate-400 text-xl leading-none"
+                    className="text-slate-400 text-2xl leading-none"
                     title="タスクを追加"
                   >
                     +
